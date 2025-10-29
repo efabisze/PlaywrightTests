@@ -447,3 +447,4 @@ C:\Users\efabi\source\repos\PlaywrightTests\bin\Debug\net9.0\MimeTypesMap.dll
 C:\Users\efabi\source\repos\PlaywrightTests\bin\Debug\net9.0\Allure.Net.Commons.dll
 C:\Users\efabi\source\repos\PlaywrightTests\bin\Debug\net9.0\Allure.NUnit.dll
 C:\Users\efabi\source\repos\PlaywrightTests\bin\Debug\net9.0\nunit.framework.legacy.dll
+C:\Users\efabi\source\repos\PlaywrightTests\obj\Debug\net9.0\PlaywrightTests.sourcelink.json
