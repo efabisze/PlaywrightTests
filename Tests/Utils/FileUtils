@@ -1,0 +1,22 @@
+
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+
+namespace PlaywrightTests.Tests.Utils;
+
+public static class FileUtils
+{
+        private static IEnumerable<TestCaseData> GetTestData()
+    {
+        using var reader = new StreamReader("test.csv");
+        using var csv = new CsvReader(reader, CultureInfo.InvariantCulture);
+        foreach (var record in csv.GetRecords<LoginRecord>())
+        {
+            yield return new TestCaseData(record.Username, record.Password, record.ExpectedResult);
+        }
+    }
+
+
+}

@@ -1,18 +1,36 @@
-namespace PlaywrightTests.Pages;
-
+using System.Threading.Tasks;
 using Microsoft.Playwright;
 
-public class HPCTestHarness(IPage page)
+namespace PlaywrightTests.Pages
 {
-    private readonly IPage _page = page;
-    private readonly ILocator _emailInput = page.Locator("#email");
-    private readonly ILocator _passwordInput = page.Locator("#password");
-    private readonly ILocator _loginButton = page.Locator("button[type='submit']");
-
-    public async Task LoginAsync(string email, string password)
+    public class TestHarnessPage
     {
-        await _emailInput.FillAsync(email);
-        await _passwordInput.FillAsync(password);
-        await _loginButton.ClickAsync();
+        private readonly IPage _page;
+
+        // Locators
+        private readonly string _usernameInput = "#username";
+        private readonly string _passwordInput = "#password";
+        private readonly string _loginButton = "#loginButton";
+        private readonly string _resultText = "#result";
+
+        public TestHarnessPage(IPage page)
+        {
+            _page = page;
+        }
+
+        public async Task FillInPayload()
+        {
+            
+        }
+
+        public async Task getResults()
+        {
+
+        }
+
+        public async Task<string> FillInIframe()
+        {
+
+        }
     }
 }

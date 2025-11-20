@@ -1,0 +1,4 @@
+bin/
+allure-report/
+allure-results/
+obj/

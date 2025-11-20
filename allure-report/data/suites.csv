@@ -1,2 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","31265","SearchForPlaywright","PlaywrightTests","2025-10-28","broken","2025-10-28","UITests","PlaywrightTests.Tests","UITests","SearchForPlaywright"
